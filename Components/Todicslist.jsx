@@ -19,7 +19,7 @@ const Topics = ({id,title ,description}) =>{
                   </div>
                   <div className="flex justify-around mt-7 mb-0 ">
                   <p><MdDelete className="text-red-500 h-5 w-10 cursor-pointer"/></p>
-                  <Link href={"/editTopics/${id}"}>
+                  <Link href={`/editTopics/${id}`}>
                   <p><FaEdit  className="text-blue-500 h-5 w-10 cursor-pointer"/></p>  
                   </Link>
                   
