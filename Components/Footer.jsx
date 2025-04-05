@@ -2,16 +2,17 @@ import React from "react";
 
 const Footer  = () =>{
     return(
-       <div className="flex justify-around bg-amber-500 items-center mt-5 text-white font-bold p-5">
-         <div> All right reserved to the @Shubha Sharma</div>
-         <div >
-           
-            <div  className="flex">
-                <p className="ml-5 cursor-pointer">intta </p>
-                <p className="ml-5 cursor-pointer">gmail</p>
-            </div>
-         </div>
-       </div>
+      <div className="bg-amber-500 text-white font-bold p-5 mt-5">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div>All rights reserved © Shubha Sharma</div>
+        
+        <div className="flex space-x-6">
+          <p className="cursor-pointer hover:underline">Instagram</p>
+          <p className="cursor-pointer hover:underline">Gmail</p>
+        </div>
+      </div>
+    </div>
+    
     )
 }
 

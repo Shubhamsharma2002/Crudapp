@@ -2,7 +2,11 @@ import React from "react";
 
 const Addtopics = () => {
   return (
-    <div className="w-[400px] mx-auto mt-10 border-2 border-blue-500 p-6 rounded-lg shadow-lg">
+    <>
+          <h1 className="text-center mt-5 font-extrabold text-blue-600">Add topics here ...</h1>
+    
+    <div className="w-[400px] mx-auto items-center mt-15 border-2 border-blue-500 p-6 rounded-lg shadow-lg">
+        
       <form action="/" className="flex flex-col space-y-4">
         <label htmlFor="title" className="font-semibold">Title:</label>
         <input
@@ -27,6 +31,7 @@ const Addtopics = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 
