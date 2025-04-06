@@ -41,3 +41,17 @@ export async function GET(request){
     );
     }
 } 
+
+
+
+
+
+
+export async function DELETE(request){
+    const id = request.nextUrl.searchParams.get("id");
+    await connectDB();
+    await Topic.findByIdAndDelete(id);
+    return Response.json(
+        { message:"Topics deleted succefully" },
+        {status:200})
+}
