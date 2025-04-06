@@ -1,14 +1,14 @@
 import mongoose from "mongoose";
 
 const topicSchema = new mongoose.Schema(
-    {
-        title:String,
-        required:true
-    },
-    {
-        description:String,
-        required:true
-    },
-    {Timestamp:true}
+  {
+    title: { type: String, required: true },
+    description: { type: String, required: true },
+  },
+  { timestamps: true }
 );
-export const Topic = mongoose.model("Topic",topicSchema);
+
+// ✅ Prevents "Cannot overwrite model" error during dev/hot reload
+const Topic = mongoose.models.Topic || mongoose.model("Topic", topicSchema);
+
+export default Topic;
