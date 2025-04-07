@@ -20,3 +20,18 @@ export async function PUT(request,{params}){
         }
     )
 }
+
+
+export async function GET(request,{params}){
+       const { id } = params;
+       await connectDB();
+       try {
+        const data = await Topic.findById(id); 
+        if (!data) {
+          return new Response(JSON.stringify({ message: "Not found" }), { status: 404 });
+        }
+        return new Response(JSON.stringify(data), { status: 200 });
+      } catch (error) {
+        return new Response(JSON.stringify({ message: "Error fetching data", error }), { status: 500 });
+      }
+}
