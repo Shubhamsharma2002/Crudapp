@@ -2,6 +2,7 @@ import connectDB from "@/libs/mongodb";
 
 export async function GET() {
     try {
+      // using db function
       await connectDB();
       return Response.json({ message: "✅ MongoDB connected successfully!" });
     } catch (error) {
