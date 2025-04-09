@@ -28,7 +28,8 @@ const  Home = async() =>{
           {val.map((p,index) =>(
             <Topics 
               key={p._id}
-              id={index + 1}
+              id={p._id}
+              val = {index + 1}
                title={p.title}
                description={p.description}
             />
