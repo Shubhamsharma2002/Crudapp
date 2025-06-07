@@ -23,7 +23,7 @@ const EditTopics =() =>{
       });
     };
      const getData = () =>{
-           fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+           fetch(`/api/topics/${id}`)
            .then((res)=>res.json())
            .then((data)=> setdata(data))
            .catch((error)=>console.log(error))
