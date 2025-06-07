@@ -1,7 +1,7 @@
 
 import Topics from "@/Components/Todicslist";
 
-
+// calling api
 const getdata = async()=>{
   try {
        const res = await fetch('http://localhost:3000/api/topics',{
