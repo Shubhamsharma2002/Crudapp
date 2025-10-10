@@ -4,6 +4,7 @@ This is a full-stack CRUD (Create, Read, Update, Delete) application built using
 
 ## 🚀 Tech Stack
 
+
 - **Frontend**: Next.js (with JSX)
 - **Backend**: Next.js API Routes
 - **Database**: MongoDB (with Mongoose)
