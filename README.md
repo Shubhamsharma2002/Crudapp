@@ -10,6 +10,7 @@ This is a full-stack CRUD (Create, Read, Update, Delete) application built using
 - **Database**: MongoDB (with Mongoose)
 - **Styling**: Tailwind CSS 
 
+
 ---
 
 ## 📂 Project Structure
