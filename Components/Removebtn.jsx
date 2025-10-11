@@ -21,6 +21,8 @@ const Deletebtn = ({id}) =>{
     // console.log(id);
     
     return(
+
+        
         <MdDelete onClick={()=>handledlete(id)} className="text-red-500 h-5 w-10 cursor-pointer"/>
     )
 }
