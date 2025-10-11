@@ -8,7 +8,7 @@ const Footer  = () =>{
         
         <div className="flex space-x-6">
           <p className="cursor-pointer hover:underline">Instagram</p>
-          <p className="cursor-pointer hover:underline">Gmail</p>
+          <p className="cursor-pointer hover:underline">Gmail </p>
         </div>
       </div>
     </div>
