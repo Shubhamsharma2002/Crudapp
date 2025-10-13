@@ -10,14 +10,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div >
-        <Navabar/>
+        <div>
+          <Navabar />
         </div>
-       
-        <main className="flex-grow min-h-screen">
-        {children}
-         </main>
-        <Footer className="bg-gray-800 text-white text-center p-4"/>
+
+        <main className="flex-grow min-h-screen">{children}</main>
+        <Footer className="bg-gray-800 text-white text-center p-4" />
       </body>
     </html>
   );
