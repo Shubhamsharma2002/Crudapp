@@ -17,4 +17,5 @@ const topicSchema = new mongoose.Schema(
 // ✅ Prevents "Cannot overwrite model" error during dev/hot reload
 const Topic = mongoose.models.Topic || mongoose.model("Topic", topicSchema);
 
+
 export default Topic;
