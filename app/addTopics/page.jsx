@@ -73,6 +73,7 @@ const Addtopics = () => {
       </div>
     </>
   );
+  
 };
 
 export default Addtopics;
